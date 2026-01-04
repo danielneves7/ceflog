@@ -69,21 +69,23 @@ body {
   flex-direction: column;
 }
 
-/* Music Player */
+/* Music Player - 60% smaller */
 .music-player {
   position: absolute;
-  top: 1rem;
-  left: 1rem;
+  top: 0.5rem;
+  left: 0.5rem;
   z-index: 20;
   background: linear-gradient(135deg, hsla(215, 25%, 12%, 0.9), hsla(215, 25%, 8%, 0.95));
   backdrop-filter: blur(12px);
   border: 1px solid hsla(215, 20%, 20%, 0.5);
-  border-radius: 0.5rem;
-  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  padding: 0.2rem 0.4rem;
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.4rem;
   animation: fadeIn 0.5s ease-out forwards;
+  transform: scale(0.4);
+  transform-origin: top left;
 }
 
 .music-icon {
@@ -179,7 +181,7 @@ body {
   padding: 5rem 8rem 2rem;
 }
 
-/* Glass Card */
+/* Glass Card - 50% smaller */
 .glass-card {
   background: linear-gradient(135deg, hsla(215, 25%, 12%, 0.9), hsla(215, 25%, 8%, 0.95));
   backdrop-filter: blur(12px);
@@ -189,6 +191,8 @@ body {
   width: 100%;
   max-width: 26rem;
   animation: fadeIn 0.5s ease-out forwards;
+  transform: scale(0.5);
+  transform-origin: center center;
 }
 
 .logo-container {
@@ -384,11 +388,13 @@ body {
   display: block;
 }
 
-/* Footer */
+/* Footer - 50% smaller */
 .footer {
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   text-align: center;
   position: relative;
+  transform: scale(0.5);
+  transform-origin: center bottom;
 }
 
 .social-links {
